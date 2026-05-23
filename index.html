@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal // Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="buttons close"></span>
+            <span class="buttons minimize"></span>
+            <span class="buttons expand"></span>
+            <div class="title">guest@terminal:~</div>
+        </div>
+        
+        <div class="terminal-body">
+            <p class="command">> cat about_me.txt</p>
+            <p class="response">Привет! Занимаюсь программированием, изучаю информационную безопасность, сети и системное администрирование.</p>
+            
+            <p class="command">> ls --projects</p>
+            <div class="projects-grid">
+                <a href="https://github.com/fedorel/arp-scanner" target="_blank" class="project-link">[Project] ARP-Scanner (Python)</a>
+            </div>
+
+            <p class="command">> netstat --links</p>
+            <div class="links-list">
+                <p>GitHub: <a href="https://github.com/fedorel" target="_blank">github.com/fedorel</a></p>
+            </div>
+
+            <p class="command">> <span class="cursor">_</span></p>
+        </div>
+    </div>
+</body>
+</html>
