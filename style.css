@@ -1,0 +1,103 @@
+body {
+    background-color: #090d16;
+    color: #4af626;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.terminal {
+    width: 100%;
+    max-width: 650px;
+    background-color: #111827;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #1f2937;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #1f2937;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.buttons {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+.close { background-color: #ef4444; }
+.minimize { background-color: #eab308; }
+.expand { background-color: #22c55e; }
+
+.title {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    pointer-events: none;
+}
+
+.terminal-body {
+    padding: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.command {
+    color: #38bdf8;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.command::before {
+    content: "fedorel@box:~$ ";
+    color: #6366f1;
+}
+
+.response {
+    color: #e5e7eb;
+    margin: 0 0 15px 0;
+}
+
+a {
+    color: #4af626;
+    text-decoration: none;
+    border-bottom: 1px dashed #4af626;
+}
+a:hover {
+    color: #fff;
+    border-bottom-style: solid;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 15px;
+}
+
+.project-link {
+    color: #fb923c;
+    border: none;
+}
+.project-link:hover { color: #fff; }
+
+.cursor {
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
